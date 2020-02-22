@@ -28,7 +28,7 @@ std::string GuaRepresentation::DebugString() const {
 std::vector<int> GuaRepresentation::GetChangedYaoVector() const {
     std::vector<int> changed_yaos;
     for (int i = 0; i < 6; i++) {
-        if (((six_yao_ >> i) & 1) == 1) {
+        if (((changed_yao_ >> i) & 1) == 1) {
             changed_yaos.push_back(i);
         }
     }
